@@ -1,7 +1,6 @@
-#include "mywho.h"
 #include <stdio.h>
-int main(){
-    int * addr = allocate();
-    printf("%x",addr);
+#include "cp.h"
+int main(int size,char* args[]){
+    who();
     return 0;
 }
