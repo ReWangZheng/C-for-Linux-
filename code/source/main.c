@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "ls.h"
+#include "pwd.h"
 int main(int size,char* args[]){
-    ls("./");
+    pwd();
     return 0;
 }
