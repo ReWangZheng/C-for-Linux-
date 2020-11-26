@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "pwd.h"
+#include "summary.h"
 int main(int size,char* args[]){
-    pwd();
+    sigdemotest();
     return 0;
 }

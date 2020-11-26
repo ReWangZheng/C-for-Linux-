@@ -1,7 +1,8 @@
 INCLUDEDIR=./head/
 BIN=./bin/
 GCC=gcc -w
-OBJ=main.o more.o who.o cp.o ls.o pwd.o
+OBJ=main.o more.o who.o cp.o ls.o pwd.o write.o screen.o\
+sigdemo.o
 vpath %.c ./source/
 vpath %.o ./bin/
 debug:$(OBJ) 

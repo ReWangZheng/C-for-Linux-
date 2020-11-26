@@ -38,5 +38,4 @@ void pwd(){
     }
     pwd();
     printf("/%s",dir_entry->d_name);
-    
 }
