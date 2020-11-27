@@ -1,14 +1,18 @@
 INCLUDEDIR=./head/
 BIN=./bin/
-GCC=gcc -w
+GCC=gcc
+GCCFLAG=-w
 OBJ=main.o more.o who.o cp.o ls.o pwd.o write.o screen.o\
-sigdemo.o
+sigdemo.o stty.o game.o
 vpath %.c ./source/
 vpath %.o ./bin/
+#
 debug:$(OBJ) 
-	$(GCC)  -I $(INCLUDEDIR) -g $(addprefix $(BIN),$^) -o $(BIN)$@
+	$(GCC)  $(GCCFLAG) -I $(INCLUDEDIR) -g $(addprefix $(BIN),$^)   -o  $(BIN)$@ -lcurses
+
 $(OBJ):%.o:%.c
-	@$(GCC) -I $(INCLUDEDIR) -c -g $^ -o $(BIN)$@
+	@$(GCC) $(GCCFLAG) -I $(INCLUDEDIR) -c -g $^ -o $(BIN)$@ 
+
 clean:
 	rm ./bin/*
 
