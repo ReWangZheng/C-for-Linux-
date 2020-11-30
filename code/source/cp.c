@@ -8,7 +8,6 @@ void cp(char * src,char * des){
     if(SRC_FD==-1){
         perror("Can't open file!");
         return;
-
     }
     
     int DES_FD = creat(des,0664);

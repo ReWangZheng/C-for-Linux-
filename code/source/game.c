@@ -12,8 +12,8 @@ void wakeup(){
 }
 void set_ticker(){
     struct itimerval tims;
-    tims.it_interval.tv_sec = 1; //间隔
-    tims.it_interval.tv_usec = 0;
+    tims.it_interval.tv_sec = 0; //间隔
+    tims.it_interval.tv_usec = 1000;
     tims.it_value.tv_sec = 1; //初始要等待的时间
     tims.it_value.tv_usec =0;
     setitimer(ITIMER_REAL,&tims,NULL); //设置时间
