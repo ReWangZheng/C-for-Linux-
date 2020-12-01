@@ -10,3 +10,4 @@ void show_screen_dimention();
 void sigdemotest();
 void stty();
 void game_start();
+void shell();
