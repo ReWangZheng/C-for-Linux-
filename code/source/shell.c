@@ -7,6 +7,8 @@ void shell(){
     char *args[10];
     printf("welecome to my shell!:\n");
     int arg=0;
+    close(1);
+    open("log.txt",O_WRONLY);
     while (1)
     {
         printf("arg[%d]:",arg);

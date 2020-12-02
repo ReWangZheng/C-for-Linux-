@@ -11,3 +11,5 @@ void sigdemotest();
 void stty();
 void game_start();
 void shell();
+void usepipe();
+void bc();

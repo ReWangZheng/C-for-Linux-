@@ -5,5 +5,5 @@
 #include "summary.h"
 int main()
 {
-    shell();
+    bc();
 }
