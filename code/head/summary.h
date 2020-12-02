@@ -14,3 +14,5 @@ void shell();
 void usepipe();
 void bc();
 FILE* mypopen();
+void start_server();
+void start_client();

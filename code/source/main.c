@@ -3,10 +3,15 @@
 #include<sys/types.h>
 #include<sys/wait.h>
 #include "summary.h"
+#include <time.h>
 int main()
 {
-    FILE* fin = mypopen("who","r");
-    char buf[30];
-    fgets(buf,30,fin);
-    printf("the res:%s",buf);
+    int pid = fork();
+    if(pid==0){
+         start_server();
+    }else{
+        sleep(1);
+        start_client();
+   }
+    
 }
