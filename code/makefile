@@ -3,7 +3,7 @@ BIN=./bin/
 GCC=gcc
 GCCFLAG=-w
 OBJ=main.o more.o who.o cp.o ls.o pwd.o write.o screen.o\
-sigdemo.o stty.o game.o shell.o usepipe.o mybc.o
+sigdemo.o stty.o game.o shell.o usepipe.o mybc.o mypopen.o
 vpath %.c ./source/
 vpath %.o ./bin/
 #

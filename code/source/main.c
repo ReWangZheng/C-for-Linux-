@@ -5,5 +5,8 @@
 #include "summary.h"
 int main()
 {
-    bc();
+    FILE* fin = mypopen("who","r");
+    char buf[30];
+    fgets(buf,30,fin);
+    printf("the res:%s",buf);
 }

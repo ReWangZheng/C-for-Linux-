@@ -13,3 +13,4 @@ void game_start();
 void shell();
 void usepipe();
 void bc();
+FILE* mypopen();
